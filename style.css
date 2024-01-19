@@ -37,3 +37,11 @@ body {
     align-items: center;
     background-color: #777;
   }
+
+  .letter-spacing-custom {
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 60px; /* Ajuste o valor conforme necessário */
+  }
+
+  /* formulario */
+  
