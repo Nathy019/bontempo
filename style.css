@@ -44,4 +44,34 @@ body {
   }
 
   /* formulario */
-  
+  container {
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+
+  /* Adicione um pouco de espaço entre as linhas */
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  /* Deixe os campos de entrada um pouco maiores */
+  .form-control {
+    height: 50px;
+  }
+
+  /* Estilo para o checkbox */
+  .form-check {
+    margin-bottom: 20px;
+  }
+
+  /* Adicione espaço entre o checkbox e o botão */
+  .form-check-label {
+    margin-right: 20px;
+  }
+
+  /* Centralize o botão */
+  .d-grid {
+    text-align: center;
+  }

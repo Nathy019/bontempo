@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST['submit'])) {
+if (isset($_POST['submit']) && !empty($_POST['privacidade'])) {
     // print_r('Nome: ' . $_POST['nome']);
     // print_r('<br>');
     // print_r('telefone: ' . $_POST['telefone']);
@@ -25,13 +25,16 @@ if (isset($_POST['submit'])) {
     $moveis = $_POST['moveis'];
     $metragem = $_POST['metragem'];
     $responsavel = $_POST['responsavel'];
+    $privacidade = $_POST['privacidade'];
 
-    $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,telefone,email,localizacao,moveis,metragem,responsavel) 
-        VALUES ('$nome','$telefone','$email','$localizacao','$moveis','$metragem','$responsavel')");
+    $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,telefone,email,localizacao,moveis,metragem,responsavel,privacidade) 
+        VALUES ('$nome','$telefone','$email','$localizacao','$moveis','$metragem','$responsavel','$privacidade')");
 
-    // header('Location: login.php');
+     header('Location: index.php');
 }
-
+else{
+    echo "Aceite o termo";
+}
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +45,6 @@ if (isset($_POST['submit'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bontempo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -83,17 +85,63 @@ if (isset($_POST['submit'])) {
 
     <!-- formulario -->
     <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <form class="row g-3" action="index.php" method="post">
+        <div class="form-group col-md-6">
+          <input placeholder="Nome completo" type="text" name="nome" id="nome" class="form-control" required>
+        </div>
+
+        <div class="form-group col-md-6">
+          <input placeholder="Telefone" type="tel" name="telefone" id="telefone" class="form-control" required>
+        </div>
+
+        <div class="form-group col-12">
+          <input type="text" name="email" id="email" placeholder="Email" class="form-control" required>
+        </div>
+
+        <div class="form-group col-12">
+          <input placeholder="Localização de obra" type="text" name="localizacao" id="localizacao" class="form-control" required>
+        </div>
+
+        <div class="form-group col-12">
+          <input placeholder="Valor estimado de investimento para móveis" type="text" name="moveis" id="moveis" class="form-control" required>
+        </div>
+
+        <div class="form-group col-12">
+          <input placeholder="Metragem de obra" type="text" name="metragem" id="metragem" class="form-control" required>
+        </div>
+
+        <div class="form-group col-12">
+          <input placeholder="Arquiteto ou engenheiro responsável" type="text" name="responsavel" id="responsavel" class="form-control" required>
+        </div>
+
+        <div class="form-group col-12 form-check">
+          <input type="checkbox" class="form-check-input" id="termosPrivacidade" name="privacidade">
+          <label class="form-check-label" for="termosPrivacidade">
+            Eu li e concordo com os <a href="privacidade.html" target="_blank">termos de privacidade</a>.
+          </label>
+        </div>
+
+        <div class="form-group col-12">
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <input class="btn btn-primary" type="submit" name="submit" id="submit">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+    <!-- <div class="container">
         <div class="row justify-content-center align-items-center">
             <form class="row g-3" action="index.php" method="post">
-                <div class="col-md-6">
+                <div class=" form-group col-md-6">
                     <input placeholder="Nome completo" type="text" name="nome" id="nome" class="form-control" required>
                 </div>
                 <br><br><br>
-                <div class="col-md-6">
+                <div class=" form-group col-md-6">
                     <input placeholder="Telefone" type="tel" name="telefone" id="telefone" class="form-control" required>
                 </div>
                 <br><br><br>
-                <div class="col-12">
+                <div class="form-group col-12">
                     <input type="text" name="email" id="email" placeholder="Email" class="form-control" required>
                 </div>
                 <br><br><br>
@@ -124,7 +172,7 @@ if (isset($_POST['submit'])) {
                     <input class="btn btn-primary" type="submit" name="submit" id="submit">
                 </div>
 
-            </form>
+            </form> -->
         </div>
     </div>
     <!-- logos zap+insta+expresse -->
@@ -173,6 +221,8 @@ if (isset($_POST['submit'])) {
     <div class="footer">
         <p>&copy; 2024 Nome da Sua Empresa. Todos os direitos reservados.</p>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
