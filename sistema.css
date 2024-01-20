@@ -1,0 +1,9 @@
+body {
+    background-color: #000000c1;
+}
+
+th,
+td {
+    text-align: center;
+    vertical-align: middle;
+}

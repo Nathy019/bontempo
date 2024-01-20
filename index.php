@@ -1,20 +1,6 @@
 <?php
 
 if (isset($_POST['submit']) && !empty($_POST['privacidade'])) {
-    // print_r('Nome: ' . $_POST['nome']);
-    // print_r('<br>');
-    // print_r('telefone: ' . $_POST['telefone']);
-    // print_r('<br>');
-    // print_r('Email: ' . $_POST['email']);
-    // print_r('<br>');
-    // print_r('localizacao ' . $_POST['localizacao']);
-    // print_r('<br>');
-    // print_r('moveis: ' . $_POST['moveis']);
-    // print_r('<br>');
-    // print_r('metragem: ' . $_POST['metragem']);
-    // print_r('<br>');
-    // print_r('responsavel: ' . $_POST['responsavel']);
-
 
     include "./confg.php";
 
@@ -26,6 +12,7 @@ if (isset($_POST['submit']) && !empty($_POST['privacidade'])) {
     $metragem = $_POST['metragem'];
     $responsavel = $_POST['responsavel'];
     $privacidade = $_POST['privacidade'];
+   
 
     $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,telefone,email,localizacao,moveis,metragem,responsavel,privacidade) 
         VALUES ('$nome','$telefone','$email','$localizacao','$moveis','$metragem','$responsavel','$privacidade')");
@@ -33,7 +20,7 @@ if (isset($_POST['submit']) && !empty($_POST['privacidade'])) {
      header('Location: index.php');
 }
 else{
-    echo "Aceite o termo";
+        
 }
 ?>
 
