@@ -49,6 +49,7 @@ body {
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    
   }
 
   /* Adicione um pouco de espaço entre as linhas */
@@ -74,4 +75,9 @@ body {
   /* Centralize o botão */
   .d-grid {
     text-align: center;
+  }
+  .formulario{
+    background-color: rgba(224, 17, 17, 0.5);
+  border-radius: 0%;
+
   }
