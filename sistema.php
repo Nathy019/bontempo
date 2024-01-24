@@ -12,9 +12,6 @@ $logado = $_SESSION['email_login'];
 $sql = "SELECT * FROM entrar ORDER BY id DESC";
 
 $result = $conexao->query($sql);
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -32,8 +29,11 @@ $result = $conexao->query($sql);
     <h1>Controle de Clientes</h1>
 </div>
 
+<div>
+    <a href="sair.php" class="btn btn-danger me-5">Sair</a>
+</div>
+
 <body class="sistema">
-    <a href="login.php">Voltar</a>
     <div class="m-5">
         <table class="table table table-dark table-striped">
             <thead>

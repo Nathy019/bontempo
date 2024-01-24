@@ -36,18 +36,13 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center">
-                    <h1 class="display-1 letter-spacing-custom">BONTEMPO</h1>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="img-fluid sm-2 xl-2">
-            <img src="img/bontempo1.png" width="1050px" height="550px" alt="">
-        </div> -->
-    </div>
+
+  <div class="container-fluid">
+    <a class="mx-auto d-block" href="#">
+      <img src="./img/bontempo.png" alt="Logo" width="150" height="150" class="mx-auto d-block img-fluid">
+    </a>
+  </div>
+</nav>
 
     <!-- logos -->
 
@@ -67,7 +62,6 @@ if (isset($_POST['submit'])) {
     </div>
 
     <!-- formulario -->
-    <div class="formulario">
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <form class="row g-3" action="index.php" method="post" id="term-priv">
@@ -114,7 +108,7 @@ if (isset($_POST['submit'])) {
                 </form>
             </div>
         </div>
-    </div>
+    
     <!-- <div class="container">
         <div class="row justify-content-center align-items-center">
             <form class="row g-3" action="index.php" method="post">

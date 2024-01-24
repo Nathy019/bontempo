@@ -13,7 +13,7 @@ if (isset($_POST['submit']) && !empty($_POST["email_login"]) && !empty($_POST['s
 
     $result = $conexao->query($sql);
     // print_r($result);
-    if(mysqli_num_rows($result) > 1){
+    if(mysqli_num_rows($result) < 1){
         unset($_SESSION['email_login']);
         unset($_SESSION['senha']);
         header('Location: login.php');
@@ -27,3 +27,4 @@ else{
 } else {
     header('location: index.php');
 }
+?>
