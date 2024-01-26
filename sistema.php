@@ -32,10 +32,15 @@ $result = $conexao->query($sql);
 <div>
     <a href="sair.php" class="btn btn-danger me-5">Sair</a>
 </div>
+<div class="container-fluid">
+        <a class="mx-auto d-block" href="index.php">
+            <img src="./img/bontempo.png" alt="Logo" width="150" height="150" class="mx-auto d-block img-fluid">
+        </a>
+    </div>
 
-<body class="sistema">
-    <div class="m-5">
-        <table class="table table table-dark table-striped">
+<body class="bg-dark">
+    <div class="m-5 bg-dark">
+        <table class="table table table-secondary table-striped border-danger">
             <thead>
                 <tr>
                     <th scope="col">#</th>

@@ -37,12 +37,12 @@ if (isset($_POST['submit'])) {
 
 <body>
 
-  <div class="container-fluid">
-    <a class="mx-auto d-block" href="#">
-      <img src="./img/bontempo.png" alt="Logo" width="150" height="150" class="mx-auto d-block img-fluid">
-    </a>
-  </div>
-</nav>
+    <div class="container-fluid">
+        <a class="mx-auto d-block" href="index.php">
+            <img src="./img/bontempo.png" alt="Logo" width="150" height="150" class="mx-auto d-block img-fluid">
+        </a>
+    </div>
+    </nav>
 
     <!-- logos -->
 
@@ -62,53 +62,53 @@ if (isset($_POST['submit'])) {
     </div>
 
     <!-- formulario -->
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <form class="row g-3" action="index.php" method="post" id="term-priv">
-                    <div class="form-group col-md-6">
-                        <input placeholder="Nome completo" type="text" name="nome" id="nome" class="form-control" required>
-                    </div>
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <form class="row g-3" action="index.php" method="post" id="term-priv">
+                <div class="form-group col-md-6">
+                    <input placeholder="Nome completo" type="text" name="nome" id="nome" class="form-control" required>
+                </div>
 
-                    <div class="form-group col-md-6">
-                        <input placeholder="Telefone" type="tel" name="telefone" id="telefone" class="form-control" required>
-                    </div>
+                <div class="form-group col-md-6">
+                    <input placeholder="Telefone" type="tel" name="telefone" id="telefone" class="form-control" required>
+                </div>
 
-                    <div class="form-group col-12">
-                        <input type="text" name="email" id="email" placeholder="Email" class="form-control" required>
-                    </div>
+                <div class="form-group col-12">
+                    <input type="text" name="email" id="email" placeholder="Email" class="form-control" required>
+                </div>
 
-                    <div class="form-group col-12">
-                        <input placeholder="Localização de obra" type="text" name="localizacao" id="localizacao" class="form-control" required>
-                    </div>
+                <div class="form-group col-12">
+                    <input placeholder="Localização de obra" type="text" name="localizacao" id="localizacao" class="form-control" required>
+                </div>
 
-                    <div class="form-group col-12">
-                        <input placeholder="Valor estimado de investimento para móveis" type="text" name="moveis" id="moveis" class="form-control" required>
-                    </div>
+                <div class="form-group col-12">
+                    <input placeholder="Valor estimado de investimento para móveis" type="text" name="moveis" id="moveis" class="form-control" required>
+                </div>
 
-                    <div class="form-group col-12">
-                        <input placeholder="Metragem de obra" type="text" name="metragem" id="metragem" class="form-control" required>
-                    </div>
+                <div class="form-group col-12">
+                    <input placeholder="Metragem de obra" type="text" name="metragem" id="metragem" class="form-control" required>
+                </div>
 
-                    <div class="form-group col-12">
-                        <input placeholder="Arquiteto ou engenheiro responsável" type="text" name="responsavel" id="responsavel" class="form-control" required>
-                    </div>
+                <div class="form-group col-12">
+                    <input placeholder="Arquiteto ou engenheiro responsável" type="text" name="responsavel" id="responsavel" class="form-control" required>
+                </div>
 
-                    <div class="form-group col-12 form-check" >
-                        <input type="checkbox" class="form-check-input" id="ptiv" name="privacidade">
-                        <label class="form-check-label" for="termosPrivacidade">
-                            Eu li e concordo com os <a href="privacidade.html" target="_blank">termos de privacidade</a>.
-                        </label>
-                    </div>
+                <div class="form-group col-12 form-check">
+                    <input type="checkbox" class="form-check-input" id="ptiv" name="privacidade">
+                    <label class="form-check-label" for="termosPrivacidade">
+                        Eu li e concordo com os <a href="privacidade.html" target="_blank">termos de privacidade</a>.
+                    </label>
+                </div>
 
-                    <div class="form-group col-12">
-                        <div class="d-grid gap-2 col-6 mx-auto">
-                            <input class="btn btn-primary" type="submit" name="submit" id="submit">
-                        </div>
+                <div class="form-group col-12">
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <input class="btn btn-primary" type="submit" name="submit" id="submit">
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
-    
+    </div>
+
     <!-- <div class="container">
         <div class="row justify-content-center align-items-center">
             <form class="row g-3" action="index.php" method="post">
@@ -158,7 +158,7 @@ if (isset($_POST['submit'])) {
     <div class="container text-center">
         <div class="row row justify-content-md-center">
             <div class="col p-5">
-               <a href=""> <img src="img/zapp.png" width="70px" height="60px" alt=""></a>
+                <a href="https://wa.me/5519997157468?text=Ol%C3%A1%2C+vim+pelo+site+da+Bontempo+de+Americana%2C+gostaria+de+falar+com+um+consultor+sobre+o+meu+projeto.+"> <img src="img/zapp.png" width="70px" height="60px" alt=""></a>
 
                 <a href="https://www.instagram.com/bontempo.americana/"><img src="img/insta.png" width="60px" alt=""></a>
 
@@ -201,6 +201,6 @@ if (isset($_POST['submit'])) {
         <p>&copy; Equipe.com. Todos os direitos reservados.</p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    
+
 
 </html>
