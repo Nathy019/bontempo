@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
     $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,telefone,email,localizacao,moveis,metragem,responsavel,privacidade) 
         VALUES ('$nome','$telefone','$email','$localizacao','$moveis','$metragem','$responsavel','$privacidade')");
 
-    header('Location: index.php');
+    header('Location: sucesso.php');
 }
 ?>
 
@@ -42,7 +42,7 @@ if (isset($_POST['submit'])) {
             <img src="./img/bontempo.png" alt="Logo" width="150" height="150" class="mx-auto d-block img-fluid">
         </a>
     </div>
-    </nav>
+    
 
     <!-- logos -->
 
