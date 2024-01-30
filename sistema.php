@@ -33,7 +33,7 @@ $result = $conexao->query($sql);
     <a href="sair.php" class="btn btn-danger me-5">Sair</a>
 </div>
 <div class="container-fluid">
-        <a class="mx-auto d-block" href="index.php">
+        <a class="mx-auto d-block" href="index.html">
             <img src="./img/bontempo.png" alt="Logo" width="150" height="150" class="mx-auto d-block img-fluid">
         </a>
     </div>

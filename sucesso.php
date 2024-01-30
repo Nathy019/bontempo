@@ -12,7 +12,7 @@
 
 <body class="success bg-dark">
     <div class="container-fluid">
-        <a class="mx-auto d-block" href="index.php">
+        <a class="mx-auto d-block" href="index.html">
             <img src="./img/bontempo.png" alt="Logo" width="150" height="150" class="mx-auto d-block img-fluid">
         </a>
     </div>
