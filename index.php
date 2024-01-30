@@ -198,7 +198,9 @@ if (isset($_POST['submit'])) {
 
 
     <div class="footer">
-        <p>&copy; Equipe.com. Todos os direitos reservados.</p>
+        <p>&copy; Equipe.com. Todos os direitos reservados.
+            <br>
+           Criado e desenvolvido por: <a href="https://github.com/Nathy019" class="link-light text-decoration-none">Nathy molina</a></p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 
